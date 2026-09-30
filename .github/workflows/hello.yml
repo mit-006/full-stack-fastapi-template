@@ -1,0 +1,16 @@
+#this is the first demo and starting file 
+name: demo_workflow
+
+on:
+  push:
+  
+jobs:
+  clone-and-print-statement:
+  
+    runs-on: ubuntu-latest
+    steps:
+      - name: code checckout
+        uses: actions/checkout@v7
+        
+      - name: use echo command
+        run: echo "hello"
